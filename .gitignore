@@ -3,3 +3,9 @@
 ################################################################################
 
 /Test_WebApi.Model/bin/Debug
+/Test_WebApi.Model/obj/Debug
+/Test_WebApi.BusinessLogic/bin/Debug
+/Test_WebApi.BusinessLogic/obj/Debug
+/Test_WebApi.BusinessLogic/bin/Debug
+/Test_WebApi/obj
+/Test_WebApi/bin
