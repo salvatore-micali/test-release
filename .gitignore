@@ -9,3 +9,5 @@
 /Test_WebApi.BusinessLogic/bin/Debug
 /Test_WebApi/obj
 /Test_WebApi/bin
+/Test_WebApi.UnitTests/bin/Debug
+/Test_WebApi.UnitTests/obj/Debug

@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\Test_WebApiConfig.cs" />
-    <Compile Include="Controller\OilPriceController.cs" />
+    <Compile Include="ApiController\OilPriceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
