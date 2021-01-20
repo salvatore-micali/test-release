@@ -17,12 +17,28 @@ namespace Test_WebApi.Controller
 
             var l = oilPriceManager.GetOilPriceTrend(startDateISO8601, endDateISO8601);
             string resultjson = JsonConvert.SerializeObject(
+                       new {
+                           prices = l                          
+                       }
+                       );
+            return Request.CreateResponse(HttpStatusCode.OK, resultjson);
+        }
+
+
+        [HttpGet]
+        [Route("api/OilPrice/GetOilPriceTrend_JsonRpcResponse")]
+        public HttpResponseMessage GetOilPriceTrend_JsonRpcResponse(DateTime startDateISO8601, DateTime endDateISO8601)
+        {
+            OilPriceManager oilPriceManager = new OilPriceManager();
+
+            var l = oilPriceManager.GetOilPriceTrend(startDateISO8601, endDateISO8601);
+            string resultjson = JsonConvert.SerializeObject(
                        new
                        {
                            jsonrpc = "2.0",
                            id = "1",
                            prices = l
-                          
+
                        }
                        );
             return Request.CreateResponse(HttpStatusCode.OK, resultjson);
